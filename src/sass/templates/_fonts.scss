@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./assets/fonts/montserrat-v12-latin-300.eot');
+    src: local('Montserrat Light'), local('Montserrat-Light'),
+        url('./assets/fonts/montserrat-v12-latin-300.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/montserrat-v12-latin-300.woff2') format('woff2'),
+        url('./assets/fonts/montserrat-v12-latin-300.woff') format('woff'),
+        url('./assets/fonts/montserrat-v12-latin-300.ttf') format('truetype'),
+        url('./assets/fonts/montserrat-v12-latin-300.svg#Montserrat') format('svg'),
+        url('./assets/fonts/montserrat-v12-latin-300.eot');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/montserrat-v12-latin-regular.eot');
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('./assets/fonts/montserrat-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/montserrat-v12-latin-regular.woff2') format('woff2'),
+        url('./assets/fonts/montserrat-v12-latin-regular.woff') format('woff'),
+        url('./assets/fonts/montserrat-v12-latin-regular.ttf') format('truetype'),
+        url('./assets/fonts/montserrat-v12-latin-regular.svg#Montserrat') format('svg');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./assets/fonts/montserrat-v12-latin-800.eot');
+    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+        url('./assets/fonts/montserrat-v12-latin-800.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/montserrat-v12-latin-800.woff2') format('woff2'),
+        url('./assets/fonts/montserrat-v12-latin-800.woff') format('woff'),
+        url('./assets/fonts/montserrat-v12-latin-800.ttf') format('truetype'),
+        url('./assets/fonts/montserrat-v12-latin-800.svg#Montserrat') format('svg');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/open-sans-v15-latin-regular.eot');
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+        url('./assets/fonts/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/open-sans-v15-latin-regular.woff2') format('woff2'),
+        url('./assets/fonts/open-sans-v15-latin-regular.woff') format('woff'),
+        url('./assets/fonts/open-sans-v15-latin-regular.ttf') format('truetype'),
+        url('./assets/fonts/open-sans-v15-latin-regular.svg#OpenSans') format('svg');
+}

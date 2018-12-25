@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: $basicTextColor;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+.wrapper {
+    background: #FF532E;
+    overflow: hidden;
+}
+.size-wrapper {
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    max-width: 1440px;
+
+}
+
+.decorate_element {
+    position: absolute;
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    transform: skew(-45deg);
+    overflow: hidden;
+    width: 960px;
+    left: -1020px;
+    height: 3000px;
+
+    &::before {
+        content: '';
+        width: 356px;
+        height: 662px;
+        background-image: url(./assets/images/cheese@2x.png);
+        background-size: contain;
+        position: absolute;
+        top: -6px;
+        left: 60px;
+        transform: skew(45deg);
+        background-repeat: no-repeat;
+    }
+}
+
+.app-wrapper {
+    position: relative;
+    z-index: 1;
+}
+.vue-slider-component .vue-slider-dot.vue-slider-always .vue-slider-tooltip-wrap {
+    display: none !important;
+}
+.vue-slider-component .vue-slider {
+    height: 2px !important;
+    background-color: #d0d0d0;
+}
+.vue-slider-component .vue-slider-process {
+    background-color: $mainColor;
+}
+.vue-slider-component .vue-slider-dot .vue-slider-dot-handle {
+    box-shadow: none;
+    background-color: $mainColor;
+}
+.vue-slider-component.vue-slider-horizontal .vue-slider-dot {
+    top: -7px !important;
+}
+.vue-slider-component {
+    padding: 0 !important;
+}

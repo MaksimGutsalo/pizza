@@ -1,0 +1,43 @@
+.footer-content {
+    position: relative;
+    max-width: 1224px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: -40px;
+        top: -45px;
+        width: 400px;
+        height: 277px;
+        background: url('./assets/images/pepper@2x.png') no-repeat center;
+        background-size: contain;
+
+    }
+    .site-logo {
+        padding-top: 80px;
+    }
+}
+
+#footer-navigation {
+    padding: 24px 0 80px 0;
+
+    .manu {
+        display: table;
+
+        li {
+            display: table-cell;
+            padding: 0 32px;
+
+            a {
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+    }
+}

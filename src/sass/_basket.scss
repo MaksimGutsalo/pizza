@@ -1,0 +1,249 @@
+.shopping-cart-popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(255, 83, 45, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart {
+    max-width: 1024px;
+    max-height: 950px;
+    width: 100%;
+    overflow: auto;
+    padding: 48px;
+    border-radius: 16px;
+    background: $white;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.12);
+    .title-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 48px;
+        .close-popup {
+            width: 24px;
+            height: 24px;
+            background: url('./assets/images/close.svg') no-repeat center;
+            cursor: pointer;
+            font-size: 0;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    .cart-title {
+        font-size: 24px;
+        font-weight: 800;
+    }
+    .product-wrapper {
+        border-bottom: 1px solid $basicGray;
+    }
+    .product-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 48px; 
+        .top-group {
+            display: flex;
+        } 
+        .category {
+            top: 0;
+            height: 72px;
+            .cat-ico {
+                width: 16px;
+                height: 16px;
+                background-size: contain;
+            }
+        } 
+        .product-details {
+            padding: 0 90px 0 24px
+        }
+        .product-title {
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding-bottom: 4px;
+        }
+        .product-description {
+            max-width: 265px;
+            font-size: 12px;
+        }
+        .basket-item-count {
+            padding: 0 94px 0 64px;
+            .item-count {
+                display: flex;
+                align-items: center;
+            }
+            .btn {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background: $lightGrey;
+                color: $borderColor;
+                font-size: 0;
+                cursor: pointer;
+                &.inc {
+                    background: url('./assets/images/plus.svg') no-repeat center $lightGrey;
+                    &:hover {
+                        background: url('./assets/images/plus-active.svg') no-repeat center $lightGrey;
+                    }
+                }
+                &.dec {
+                    background: url('./assets/images/minus.svg') no-repeat center $lightGrey;
+                    &:hover {
+                        background: url('./assets/images/minus-active.svg') no-repeat center $lightGrey;
+                    }
+                }
+            }
+            input {
+                width: 40px;
+                height: 40px;
+                border-radius: 4px;
+                border: 1px solid $lightGrey;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 14px;
+                color: $labelColor;
+                margin: 0 12px;
+                outline: none;
+            }
+        }
+        .product-price {
+            font-size: 20px;
+            font-weight: 800;
+            color: $mainColor;
+            padding-right: 20px;
+            margin-left: auto;
+        }
+        .remove-btn {
+            font-size: 0;
+            width: 16px;
+            height: 16px;
+            padding: 0;
+            background: url('./assets/images/basket-ico.svg') no-repeat center;
+            cursor: pointer;
+            &:hover {
+                background: url('./assets/images/basket-active-ico.svg') no-repeat center;
+            }
+        }
+    }
+    .cart-total {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+        .add-more {
+            border-radius: 24px;
+            padding: 12px 32px;
+            background: $lightGrey;
+            cursor: pointer;
+        }
+    }
+    .total-price-wrap {
+        padding-left: 48px;
+        display: flex;
+        font-size: 24px;
+        font-weight: 800;
+        .total-price {
+            color: $mainColor;
+            padding-left: 16px;
+        }
+    }
+    .cart-empty {
+        text-align: center;
+        font-size: 16px;
+        padding: 24px 0;
+    }
+    .address-form-wrap {
+        padding-top: 48px;
+        legend {
+            font-size: 24px;
+            font-weight: 800;
+        }
+        .field-wrap {
+            padding-top: 24px;
+        }
+        .address-wrap {
+            display: flex;
+        }
+        p {
+            position: relative;
+        }
+        input {
+            width: auto;
+            height: 48px;
+            border-radius: 4px;
+            border: 1px solid $borderColor;
+            padding: 0 16px;
+            font-family: 'OpenSans';
+            &:focus {
+                border-color: $mainColor;
+                outline: none;
+            }
+        }
+        label {
+            font-family: OpenSans;
+            line-height: normal;
+            letter-spacing: normal;
+            padding: 10px 5px;
+            margin: 5px 0;
+            color: $labelColor;
+            background: $white;
+            position: absolute;
+            left: 16px;
+            top: 1px;
+            transition: 0.5s;
+        }
+        input:focus + label,
+        label.in-focus {
+            padding: 0 5px;
+            margin: 0;
+            font-size: 10px;
+            top: -7px;
+            color: $mainColor;
+        }
+        .street,
+        .phone {
+            padding-right: 24px;
+            input {
+                width: 256px;
+            }
+        }
+        .build,
+        .entrance {
+            padding-right: 24px;
+            input {
+                width: 120px;
+            }
+        }
+        .form-bottom {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 24px;
+        }
+        .confirm-btn {
+            padding: 5px 32px;
+            border-radius: 28px;
+            background: $mainColor;
+            font-size: 16px;
+            text-align: center;
+            color: $white;
+            transition: 0.3s;
+    
+            &:hover {
+                transition: 0.3s;
+                box-shadow: 0 0 0 1px $mainColor inset;
+                color: $mainColor;
+                background: $white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media screen and (max-height: 950px) {
+    .cart{
+        max-height: 768px;
+    }
+}

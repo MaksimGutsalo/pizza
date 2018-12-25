@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>F74C9592-1793-439B-A43F-CB2566814142</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M12.9797799,4.97977994 C13.1750421,4.7845178 13.4916246,4.7845178 13.6868867,4.97977994 C13.8821489,5.17504209 13.8821489,5.49162458 13.6868867,5.68688672 L8.35355339,11.0202201 C8.15829124,11.2154822 7.84170876,11.2154822 7.64644661,11.0202201 L2.31311328,5.68688672 C2.11785113,5.49162458 2.11785113,5.17504209 2.31311328,4.97977994 C2.50837542,4.7845178 2.82495791,4.7845178 3.02022006,4.97977994 L8,9.95955989 L12.9797799,4.97977994 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/expand">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="expand" fill="#777777" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="color/005_Total_black" mask="url(#mask-2)" fill="#000000">
+                <polygon id="main_button_col" points="0 0 16 0 16 16 0 16"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

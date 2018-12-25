@@ -1,0 +1,16 @@
+@import './templates/reset';
+@import './templates/fonts';
+@import './templates/variables';
+@import './basic';
+@import './header';
+@import './mainContent';
+@import './leftSidebar';
+@import './footer';
+@import './basket';
+
+@media screen and (max-width: 1200px) {
+    @import './mobile/768';
+}
+@media screen and (max-width: 767px) {
+    @import './mobile/320';
+}
