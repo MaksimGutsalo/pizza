@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     &::before {
         content: '';
         position: absolute;
@@ -17,23 +16,18 @@
         height: 277px;
         background: url('./assets/images/pepper@2x.png') no-repeat center;
         background-size: contain;
-
     }
     .site-logo {
         padding-top: 80px;
     }
 }
-
 #footer-navigation {
     padding: 24px 0 80px 0;
-
     .manu {
         display: table;
-
         li {
             display: table-cell;
             padding: 0 32px;
-
             a {
                 font-size: 18px;
                 font-weight: 300;

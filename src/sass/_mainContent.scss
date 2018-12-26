@@ -6,7 +6,6 @@
     background-color: #ffffff;
     display: flex;
     position: relative;
-
     &::before {
         content: '';
         position: absolute;
@@ -18,7 +17,6 @@
         background: url('./assets/images/tomato@2x.png') no-repeat center;
         background-size: contain;
     }
-
     &::after {
         content: '';
         position: absolute;
@@ -31,12 +29,10 @@
         background-size: contain;
     }
 }
-
 section.filter {
     display: flex;
     justify-content: space-between;
     padding-right: 48px;
-
     .sort-type {
         display: flex;
         padding-top: 4px;
@@ -84,10 +80,8 @@ section.filter {
             }
         }
     }
-
     .view-type {
         display: flex;
-
         .list-type {
             width: 24px;
             height: 24px;
@@ -95,20 +89,17 @@ section.filter {
             background: url('./assets/images/list-ico.svg') no-repeat center;
             cursor: pointer;
             display: block;
-
             &.active,
             &:hover {
                 background: url('./assets/images/list-ico-active.svg') no-repeat center;
             }
         }
-
         .tile-type {
             width: 24px;
             height: 24px;
             background: url('./assets/images/tile-ico.svg') no-repeat center;
             cursor: pointer;
             display: block;
-
             &.active,
             &:hover {
                 background: url('./assets/images/tile-ico-active.svg') no-repeat center;
@@ -116,7 +107,6 @@ section.filter {
         }
     }
 }
-
 section.content {
     padding: 48px 0 72px 0;
     width: 100%;
@@ -126,21 +116,17 @@ section.content {
     flex-direction: column;
     position: relative;
     top: -8px;
-
     .cat-ico {
         width: 24px;
         height: 24px;
         display: inline-block;
         margin-bottom: 8px;
-
         &.meat-ico {
             background: url('./assets/images/cat_type_ico/meat.svg') no-repeat center;
         }
-
         &.veggie-ico {
             background: url('./assets/images/cat_type_ico/veggie.svg') no-repeat center;
         }
-
         &.hot-ico {
             background: url('./assets/images/cat_type_ico/hot.svg') no-repeat center;
         }
@@ -150,11 +136,6 @@ section.content {
     position: relative;
     cursor: pointer;
     padding-right: 29px;
-    // &:hover {
-    //     .dropdown-wrap {
-    //         display: block;
-    //     }
-    // }
     .selcet-item {
         .name {
             font-size: 16px;
@@ -189,7 +170,6 @@ section.content {
         box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
         background-color: #ffffff;
         min-width: 200px;
-        // display: none;
         li {
             padding: 13px 16px;
             font-size: 16px;
@@ -201,14 +181,12 @@ section.content {
         }
     }
 }
-
 section.products-wrap {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -12px;
     margin-bottom: -48px;
     padding: 48px 0 60px 0;
-
     .product-item {
         position: relative;
         display: flex;
@@ -220,36 +198,29 @@ section.products-wrap {
         border-radius: 4px;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12);
         background-color: $white;
-
         &:hover {
             box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.12);
             transition: 0.3s;
-
             .order-button {
                 display: block;
             }
         }
-
         .top-group {
             display: flex;
         }
-
         .product-image {
             width: 176px;
             height: 176px;
         }
-
         .product-title {
             padding-top: 24px;
             text-align: center;
-
             a {
                 font-size: 20px;
                 font-weight: 800;
                 text-transform: uppercase;
             }
         }
-
         .product-description {
             padding-top: 16px;
         }
@@ -271,7 +242,6 @@ section.products-wrap {
                 color: $mainColor;
             }
         }
-
         .order-button {
             position: absolute;
             bottom: -24px;
@@ -284,7 +254,6 @@ section.products-wrap {
             padding: 15px 62px 15px 24px;
             background: url('./assets/images/cart.svg') no-repeat center right 24px, $mainColor;
             display: none;
-
             &:hover {
                 box-shadow: 0 0 0 1px $mainColor;
                 color: $mainColor;

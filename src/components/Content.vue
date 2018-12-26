@@ -63,7 +63,6 @@
     },
     computed: {
         sortCatalog () {
-
             switch(this.defaultValue) {
                 case this.arrayOfObjects[1].name:
                     return this.orderedProdsASC();
@@ -101,12 +100,9 @@
                     
                 }
             });
-
         },
-
     },
     methods: {
-
         orderedProdsDesc () {
             return _.orderBy(this.products, 'price').reverse();
         },
@@ -122,7 +118,6 @@
         onChange(event) {
             this.defaultValue = event.target.textContent;
         },
-
         setPage (pageNumber) {
             this.currentPage = pageNumber;
         },

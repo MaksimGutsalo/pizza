@@ -21,7 +21,6 @@
             defaultValue: "Popular "
           }
         },
-
         methods: {
           onChange(event) {
             this.defaultValue = event.target.textContent;

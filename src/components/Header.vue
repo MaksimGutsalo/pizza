@@ -27,7 +27,7 @@
         <div class="button-order" @click="openPopup">Order</div>
       </div>
       <div class="main-product-image">
-        <img src="../assets/images/product/main-pizza@2x.png" alt="Big pizza" width="382px" height="357px">
+        <img src="../assets/images/product/main-pizza@2x.png" alt="Big pizza" width="382" height="357">
       </div>
     </section>
   </header>

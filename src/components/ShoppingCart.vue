@@ -21,12 +21,7 @@
           <div class="product-title">{{item.title}}</div>
           <div class="product-description">{{item.descr}}</div>
         </div>
-        <div class="select-wrap" @click="showDropdown(item.id)">
-            <div class="selcet-item" ><span class="name">{{ paramName }}</span><span class="value">{{ paramVal }}</span><span class="chevron"></span></div>
-            <ul class="dropdown-wrap" v-show="dropdowOn">
-                <li class="dropdown-item" v-for="liItem in item.sizes" @click="onChange($event)"><span class="name">{{ liItem.name }}</span><span class="value">{{liItem.value}}</span></li>
-            </ul>
-        </div>
+        <SelectWrap></SelectWrap>
         <div class="basket-item-count">
           <div class="item-count">
             <button class="inc btn" @click="inc(item.id)">+</button>
@@ -80,9 +75,13 @@
 <script>
   import State from './shoppingCartState'
   import _ from 'lodash'
+  import SelectWrap from './ui-components/SelectWrap.vue';
 
   export default {
     props:['prods'],
+    components: {
+      SelectWrap
+    },
     data() {
       return {
         items: State.data.cart,
@@ -95,7 +94,7 @@
         paramVal:'',
         shared: State.data,
         notEmptyCart: true,
-        dropdowOn: false,
+        dropdowOn: false
       }
     },
     methods: {
@@ -117,11 +116,11 @@
           return _.sumBy(this.items, function(item ,) {
             if(item.qty > 1 && id == item.id){
               return  item.qty--
-            } 
+            }
           })
         },
-        showDropdown (id) {
-          this.dropdowOn = !this.dropdowOn
+        showDropdown (item,event) {
+          this.dropdowOn = !this.dropdowOn;
         },
         closePopup() {
           this.shared.visible = ! this.shared.visible

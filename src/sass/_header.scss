@@ -17,24 +17,19 @@
 
 #main-navigation {
     padding-top: 56px;
-
     .manu {
         display: table;
-
         li {
             display: table-cell;
             padding-right: 58px;
-
             &:last-child {
                 padding-right: 24px;
             }
-
             a {
                 font-size: 24px;
                 font-weight: 300;
                 color: $basicGray;
                 text-decoration: none;
-
                 &:hover {
                     text-decoration: underline;
                 }
@@ -42,14 +37,11 @@
         }
     }
 }
-
 .page-description {
     display: flex;
     justify-content: space-between;
-
     .description-wrapper {
         padding: 156px 0 0 25px;
-
         h1 {
             font-size: 56px;
             font-weight: 800;
@@ -58,18 +50,15 @@
             max-width: 500px;
         }
     }
-
     .delivery-txt {
         display: block;
         font-size: 18px;
         padding-top: 29px;
     }
-
     .main-product-image {
         margin-top: 85px;
         margin-right: 32px;
     }
-
     .button-order {
         display: inline-block;
         padding: 0 32px;
@@ -81,7 +70,6 @@
         color: $white;
         transition: 0.3s;
         margin-top: 30px;
-
         &:hover {
             transition: 0.3s;
             box-shadow: 0 0 0 1px $mainColor inset;

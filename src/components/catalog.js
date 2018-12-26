@@ -30,7 +30,6 @@ let prods = [{
             value: "400mm"
         }
     ],
-    
 },
 {
     id: 2,
@@ -63,8 +62,7 @@ let prods = [{
             name: "Small",
             value: "400mm"
         }
-    ],
-    
+    ]
 },
 {
     id: 3,
@@ -97,8 +95,7 @@ let prods = [{
             name: "Small",
             value: "400mm"
         }
-    ],
-    
+    ]
 },
 {
     id: 4,
@@ -131,8 +128,7 @@ let prods = [{
             name: "Small",
             value: "400mm"
         }
-    ],
-    
+    ]
 },
 {
     id: 5,
@@ -165,8 +161,7 @@ let prods = [{
             name: "Small",
             value: "400mm"
         }
-    ],
-    
+    ]
 },
 {
     id: 6,
@@ -199,8 +194,7 @@ let prods = [{
             name: "Small",
             value: "400mm"
         }
-    ],
-    
+    ]
 },
 {
     id: 7,
@@ -233,8 +227,7 @@ let prods = [{
             name: "Small",
             value: "400mm"
         }
-    ],
-    
+    ]
 },
 {
     id: 8,
@@ -267,8 +260,7 @@ let prods = [{
             name: "Small",
             value: "400mm"
         }
-    ],
-    
+    ]
 },
 {
     id: 9,
@@ -301,8 +293,7 @@ let prods = [{
             name: "Small",
             value: "400mm"
         }
-    ],
-    
+    ]
 },
 {
     id: 10,
@@ -335,8 +326,7 @@ let prods = [{
             name: "Small",
             value: "400mm"
         }
-    ],
-    
+    ]
 }
 
 ]

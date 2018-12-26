@@ -11,7 +11,7 @@ export default {
     },
     props: {
         products: {
-            type: Array,
+            type: Array
         }
     },
     data() {
@@ -31,7 +31,7 @@ export default {
             this.pagination = this.paginator(this.products.length, p);
         },
         paginate(products) {
-            return _.slice(products, this.pagination.startIndex, this.pagination.endIndex + 1)
+            return _.slice(products, this.pagination.startIndex, this.pagination.endIndex + 1);
         },
         paginator(totalItems, currentPage) {
             var startIndex = (currentPage - 1) * this.perPage,
@@ -47,6 +47,5 @@ export default {
     created() {
         this.setPage(1);
     }
-
 }
 </script>

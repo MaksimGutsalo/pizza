@@ -6,7 +6,7 @@
             </div>
             <div class="product-image">
                 <a href="#">
-                    <img :src="product.image" alt="" width="176px" height="176px">
+                    <img :src="product.image" alt="" width="176" height="176">
                 </a>
             </div>
         </div>
@@ -64,7 +64,6 @@ import dropdown from 'vue-dropdowns';
             showPopup: State.data
           }
         },
-
         methods: {
             onChange(event) {
                 this.paramName = '';
@@ -95,6 +94,5 @@ import dropdown from 'vue-dropdowns';
             this.paramName = this.arrayOfObjects[0].name;
             this.paramVal = this.arrayOfObjects[0].value;
         },
-
 }
 </script>

@@ -2,29 +2,23 @@ aside.left-sidebar {
     padding: 120px 48px 48px;
     width: 324px;
     flex-shrink: 0;
-
     .block-title {
         font-size: 24px;
         font-weight: 800;
         display: block;
         padding-bottom: 24px;
     }
-
     .category-items {
         padding-bottom: 32px;
-
         .cat-type {
             padding-bottom: 16px;
-
             &:last-of-type {
                 padding-bottom: 0;
             }
         }
-
         input[type=checkbox] {
             display: none;
         }
-
         input[type=checkbox]+label {
             position: relative;
             display: flex;
@@ -32,7 +26,6 @@ aside.left-sidebar {
             line-height: 24px;
             cursor: pointer;
             padding-left: 24px;
-
             &::before {
                 content: '';
                 width: 24px;
@@ -43,27 +36,22 @@ aside.left-sidebar {
                 border-radius: 4px;
                 box-shadow: 0 0 0 1px $borderColor inset;
             }
-
             .cat-ico {
                 width: 24px;
                 height: 24px;
                 display: inline-block;
                 margin: 0 16px;
-
                 &.meat-ico {
                     background: url('./assets/images/cat_type_ico/meat.svg') no-repeat center;
                 }
-
                 &.veggie-ico {
                     background: url('./assets/images/cat_type_ico/veggie.svg') no-repeat center;
                 }
-
                 &.hot-ico {
                     background: url('./assets/images/cat_type_ico/hot.svg') no-repeat center;
                 }
             }
         }
-
         input[type=checkbox]:checked+label {
             &::before {
                 background: url('./assets/images/checkbox-active@2x.png') no-repeat center;
@@ -72,22 +60,17 @@ aside.left-sidebar {
             }
         }
     }
-
     .size-items {
         padding-bottom: 32px;
-
         .size-type {
             padding-bottom: 16px;
-
             &:last-of-type {
                 padding-bottom: 0;
             }
         }
-
         input[type=checkbox] {
             display: none;
         }
-
         input[type=checkbox]+label {
             position: relative;
             display: flex;
@@ -95,7 +78,6 @@ aside.left-sidebar {
             line-height: 24px;
             cursor: pointer;
             padding-left: 40px;
-
             &::before {
                 content: '';
                 width: 24px;
@@ -107,7 +89,6 @@ aside.left-sidebar {
                 box-shadow: 0 0 0 1px $borderColor inset;
             }
         }
-
         input[type=checkbox]:checked+label {
             &::before {
                 background: url('./assets/images/checkbox-active@2x.png') no-repeat center;
