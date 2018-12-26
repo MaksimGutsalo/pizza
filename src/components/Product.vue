@@ -6,7 +6,7 @@
             </div>
             <div class="product-image">
                 <a href="#">
-                    <img :src="product.image" alt="" width="176" height="176">
+                    <img :src="product.image" :alt="product.title" :title="product.title" width="176" height="176">
                 </a>
             </div>
         </div>

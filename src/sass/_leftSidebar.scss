@@ -41,13 +41,13 @@ aside.left-sidebar {
                 height: 24px;
                 display: inline-block;
                 margin: 0 16px;
-                &.meat-ico {
+                &.Meat-ico {
                     background: url('./assets/images/cat_type_ico/meat.svg') no-repeat center;
                 }
-                &.veggie-ico {
+                &.Veggie-ico {
                     background: url('./assets/images/cat_type_ico/veggie.svg') no-repeat center;
                 }
-                &.hot-ico {
+                &.Hot-ico {
                     background: url('./assets/images/cat_type_ico/hot.svg') no-repeat center;
                 }
             }
@@ -114,6 +114,9 @@ aside.left-sidebar {
             border: 1px solid $borderColor;
             padding: 0 16px;
             font-family: 'OpenSans';
+            appearance: none;
+            -webkit-appearance: none; 
+            -moz-appearance: textfield;
             &:focus {
                 border-color: $mainColor;
                 outline: none;

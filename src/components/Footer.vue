@@ -3,7 +3,7 @@
     <section class="footer-content">
       <div class="site-logo">
         <a href="#">
-          <img src="../assets/images/logo-pizza.svg" alt="Pizza Slice<">
+          <img src="../assets/images/logo-pizza.svg" alt="Pizza Slice" title="Pizza Slice">
         </a>
       </div>
       <nav id="footer-navigation" class="footer-navigation">

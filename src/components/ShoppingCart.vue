@@ -13,7 +13,7 @@
           </div>
           <div class="product-image">
               <a href="#">
-                  <img :src="item.image" alt="" width="72" height="72">
+                  <img :src="item.image" :alt="item.title" :title="item.title" width="72" height="72">
               </a>
           </div>
         </div>

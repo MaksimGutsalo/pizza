@@ -16,7 +16,7 @@
       </div>
     </section>
     <section v-if="layout == 'tile'" class="products-wrap tile">
-       <ProductItem v-for="product in filterCatalog" :key="product.id"
+       <ProductItem v-for="product in filteredSidebar" :key="product.id"
         :product="product" v-if="product"></ProductItem>
     </section>
     <section v-if="layout == 'list'" class="products-wrap list">
@@ -58,7 +58,8 @@
             ],
             defaultValue: 'Popular',
             dropdowOn: false,
-            poupOn: State.data
+            poupOn: State.data,
+
         }
     },
     computed: {
@@ -97,10 +98,20 @@
             return filterResult = this.paginate.map( product => {
                 if(typeof product == 'object') {
                     return (product.price >= priceFirst) && (product.price <= priceSecond) ? product : undefined ;
-                    
+
                 }
             });
         },
+        filteredSidebar(){
+            let filters = this.$store.state.results;
+            if (!filters.length) {
+                return this.filterCatalog;
+            }
+            return  this.filterCatalog.filter(item => {
+              return filters.includes(item.size.value);
+            });
+
+        }
     },
     methods: {
         orderedProdsDesc () {

@@ -4,22 +4,10 @@
       <div class="category-block">
         <span class="block-title">Category</span>
         <div class="category-items">
-          <div class="cat-type cat-type-meat">
-            <input type="checkbox" id="type-meat" name="Meat">
-            <label for="type-meat">
-              <span class="cat-ico meat-ico"></span>Meat
-            </label>
-          </div>
-          <div class="cat-type cat-type-veggie">
-            <input type="checkbox" id="type-veggie" name="Veggie">
-            <label for="type-veggie">
-              <span class="cat-ico veggie-ico"></span>Veggie
-            </label>
-          </div>
-          <div class="cat-type cat-type-hot">
-            <input type="checkbox" id="type-hot" name="Hot">
-            <label for="type-hot">
-              <span class="cat-ico hot-ico"></span>Hot
+          <div v-for="categorie in categories" :class="'cat-type cat-type-'+categorie.name">
+            <input type="checkbox" :id="'type-'+categorie.name" :name="categorie.name" v-model="results" :value="categorie.name"  @change="onChecked">
+            <label :for="'type-'+categorie.name">
+              <span :class="'cat-ico'+' '+categorie.name+'-ico'"></span>{{categorie.name}}
             </label>
           </div>
         </div>
@@ -27,17 +15,9 @@
       <div class="size-block">
         <span class="block-title">Default Size</span>
         <div class="size-items">
-          <div class="size-type size-400">
-            <input type="checkbox" id="size-400mm" name="400mm">
-            <label for="size-400mm">400mm</label>
-          </div>
-          <div class="size-type size-600">
-            <input type="checkbox" id="size-600mm" name="600mm">
-            <label for="size-600mm">600mm</label>
-          </div>
-          <div class="size-type size-800">
-            <input type="checkbox" id="size-800mm" name="800mm">
-            <label for="size-800mm">800mm</label>
+          <div v-for="size in sizes" :class="'size-type size-'+ size.name">
+            <input type="checkbox" :id="'size-'+size.name" :name="size.name" v-model="results" :value="size.name" @change="onChecked">
+            <label :for="'size-'+ size.name">{{ size.name }}</label>
           </div>
         </div>
       </div>
@@ -72,7 +52,31 @@ export default {
     return {
       inFocus: false,
       value: [0, 100],
-      query:''
+      query:'',
+      results: [],
+      sizes: [
+        {
+          name: '400mm'
+        },
+        {
+          name: '600mm'
+        },
+        {
+          name: '800mm'
+        }
+      ],
+      categories: [
+        {
+          name: 'Meat',
+        },
+        {
+          name: 'Veggie',
+        },
+        {
+          name: 'Hot'
+        }
+      ]
+
     };
   },
   methods: {
@@ -82,6 +86,21 @@ export default {
         this.$store.state.priceFrom = parseFloat(str_length[0]);
         this.$store.state.priceTo = parseFloat(str_length[1]);
 
+      },
+      onChecked () {
+        let unique = arr => {
+          var obj = {};
+          for (var i = 0; i < arr.length; i++) {
+            var str = arr[i];
+            obj[str] = true;
+          }
+          if(obj.length > 1){
+            return Object.keys(obj[obj.length-1]);
+          }else{
+            return Object.keys(obj);
+          }
+        };
+        this.$store.state.results[0] = unique(this.results);
       }
     }
   }
