@@ -17,14 +17,7 @@ let prods = [{
             className: "hot-ico cat-ico"
         }
     ],
-    size: [{
-            name: "Large",
-            value: "800mm"
-        },
-        {
-            name: "Medium",
-            value: "600mm"
-        },
+    size: [
         {
             name: "Small",
             value: "400mm"
@@ -51,16 +44,8 @@ let prods = [{
         }
     ],
     size: [{
-            name: "Large",
-            value: "800mm"
-        },
-        {
             name: "Medium",
             value: "600mm"
-        },
-        {
-            name: "Small",
-            value: "400mm"
         }
     ]
 },
@@ -84,16 +69,8 @@ let prods = [{
         }
     ],
     size: [{
-            name: "Large",
-            value: "800mm"
-        },
-        {
             name: "Medium",
             value: "600mm"
-        },
-        {
-            name: "Small",
-            value: "400mm"
         }
     ]
 },
@@ -119,14 +96,6 @@ let prods = [{
     size: [{
             name: "Large",
             value: "800mm"
-        },
-        {
-            name: "Medium",
-            value: "600mm"
-        },
-        {
-            name: "Small",
-            value: "400mm"
         }
     ]
 },
@@ -152,14 +121,6 @@ let prods = [{
     size: [{
             name: "Large",
             value: "800mm"
-        },
-        {
-            name: "Medium",
-            value: "600mm"
-        },
-        {
-            name: "Small",
-            value: "400mm"
         }
     ]
 },
@@ -171,7 +132,8 @@ let prods = [{
     price: 11.50,
     category: [{
             catStatus: true,
-            className: "meat-ico cat-ico"
+            className: "meat-ico cat-ico",
+            name: "Meat"
         },
         {
             catStatus: false,
@@ -179,20 +141,13 @@ let prods = [{
         },
         {
             catStatus: true,
-            className: "hot-ico cat-ico"
+            className: "hot-ico cat-ico",
+            name: 'Hot'
         }
     ],
     size: [{
             name: "Large",
             value: "800mm"
-        },
-        {
-            name: "Medium",
-            value: "600mm"
-        },
-        {
-            name: "Small",
-            value: "400mm"
         }
     ]
 },
@@ -204,7 +159,8 @@ let prods = [{
     price: 12.00,
     category: [{
             catStatus: true,
-            className: "meat-ico cat-ico"
+            className: "meat-ico cat-ico",
+            name: "Meat"
         },
         {
             catStatus: false,
@@ -218,14 +174,6 @@ let prods = [{
     size: [{
             name: "Large",
             value: "800mm"
-        },
-        {
-            name: "Medium",
-            value: "600mm"
-        },
-        {
-            name: "Small",
-            value: "400mm"
         }
     ]
 },
@@ -251,14 +199,6 @@ let prods = [{
     size: [{
             name: "Large",
             value: "800mm"
-        },
-        {
-            name: "Medium",
-            value: "600mm"
-        },
-        {
-            name: "Small",
-            value: "400mm"
         }
     ]
 },
@@ -284,14 +224,6 @@ let prods = [{
     size: [{
             name: "Large",
             value: "800mm"
-        },
-        {
-            name: "Medium",
-            value: "600mm"
-        },
-        {
-            name: "Small",
-            value: "400mm"
         }
     ]
 },

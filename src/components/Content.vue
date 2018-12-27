@@ -20,7 +20,7 @@
         :product="product" v-if="product"></ProductItem>
     </section>
     <section v-if="layout == 'list'" class="products-wrap list">
-       <ProductItem v-for="product in filterCatalog" :key="product.id"
+       <ProductItem v-for="product in filteredSidebar" :key="product.id"
         :product="product"></ProductItem>
     </section>
     <ul class="pagination">
@@ -104,13 +104,16 @@
         },
         filteredSidebar(){
             let filters = this.$store.state.results;
+            let filterResult;
             if (!filters.length) {
                 return this.filterCatalog;
-            }
-            return  this.filterCatalog.filter(item => {
-              return filters.includes(item.size.value);
+            }else{
+            return filterResult = this.filterCatalog.filter((item) => {
+                if(typeof item == 'object') {
+                    return filters[0].includes(item.size[0].value) ||  filters[0].includes(item.category[0].name) ;
+                }
             });
-
+            }
         }
     },
     methods: {

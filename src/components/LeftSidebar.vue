@@ -101,6 +101,7 @@ export default {
           }
         };
         this.$store.state.results[0] = unique(this.results);
+        this.inFocused ();
       }
     }
   }
